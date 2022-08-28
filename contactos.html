@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R&S Abogados</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-contactos">
+      <div class="contenedor">
+        <div class="barra">
+          <a href="index.html">
+            <h1 class="logo"><span>R</span>&<span>S</span></h1>
+          </a>
+
+          <nav class="navegacion">
+            <a href="index.html">Nosotros</a>
+            <a href="contactos.html">Contactos</a>
+          </nav>
+        </div>
+        <!--barra-->
+      </div>
+    </header>
+
+    <h1 class="centrar-texto">Contacto</h1>
+
+    <main class="contenedor seccion contenido-centrado contacto">
+      <h3>Llena el formulario de contacto</h3>
+
+      <form class="formulario"  name="formulario" action="PHP/enviar.php" method="post">
+        <fieldset>
+          <legend>Informacion Persona</legend>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre" required="true" />
+
+          <label for="e-mail">E-mail:</label>
+          <input type="email" id="e-mail" name="e-mail" placeholder="Escribe tu Email" required="true" />
+
+          <label for="tel">Telefono</label>
+          <input type="tel" id="tel" name="tel" placeholder="Tu Telefono" />
+
+          <label for="comentario">Comentario:</label>
+          <textarea id="comentario" name="mensaje" cols="30" rows="10"></textarea>
+          
+          <input  type="submit" value="Enviar" class="boton" />
+          
+        </fieldset>
+      </form>
+    </main>
+
+    <footer class="site-footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contactos.html">Contactos</a>
+        </nav>
+        <p class="copyright">Todos los Derechos Reservados 2021 &#169;</p>
+      </div>
+    </footer>
+
+    <script src="JS/app.js"></script>
+  </body>
+</html>
